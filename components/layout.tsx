@@ -4,7 +4,7 @@ import { useRef } from "react"
 import styles from "../styles/layout.module.css"
 
 
-export default function layout ({ children }) {
+export default function Layout ({ children }) {
 
     const navRef = useRef<HTMLDivElement>(null)
 

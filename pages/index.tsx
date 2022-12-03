@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/index.module.css'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Project from '../components/elements/Project/Project'
 import profile from '../public/profile.jpg'
 
@@ -25,7 +25,7 @@ export default function Home() {
           <div className={styles['about-container']}>
             <Image src={profile} alt='profile' className={styles['about-image']}></Image>
             <div className={styles['about-description']}>
-              <h3 className={styles['about-description-text']}>Hello, I'm Joseph Ho and I am a web developer from Toronto, Canada. I love creating and building apps that are clean, interesting and useful to others.</h3>
+              <h3 className={styles['about-description-text']}>Hello, I&apos;m Joseph Ho and I am a web developer from Toronto, Canada. I love creating and building apps that are clean, interesting and useful to others.</h3>
               <h4 className={styles['about-description-more']}>Learn more about me</h4>
             </div>
           </div>
