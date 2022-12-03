@@ -1,0 +1,134 @@
+.main {
+    margin: 0 5%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin-bottom: 10%;
+}
+
+.home-explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home-explore-text {
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.home-explore-icon {
+    margin: 0;
+}
+
+.about {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-container {
+    margin: 20% auto;
+
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 2em auto;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    max-width: 20em;
+    height: auto;
+}
+
+.about-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.about-description-text {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.about-description-more {
+    margin: 0;
+    color: #FE4A49;
+}
+
+.project {
+    
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container {
+    width: 100%;
+}
+
+.project-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.unique-font {
+    color: white;
+    -webkit-text-stroke: 1.5px #FE4A49;
+    transition: 0.5s ease-out;
+    font-size: var(--h1-font-size);
+}
+
+.unique-font:hover {
+    color: #FE4A49;
+    cursor: default;
+    transition: 0.5s ease-out;
+}
+
+@media (min-width: 1150px) {
+    .main {
+        margin: 0 20%;
+    }
+
+    .about-container {
+        display: flex;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1150px) {
+    .main {
+        margin: 0 10%;
+    }
+}
+
+@media (min-width:600px) {
+    .home-header {
+        max-width: 60%;
+    }
+    
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-description {
+        max-width: 50%;
+    }
+    
+    .about-image {
+        width: 40%;
+        margin: 0;
+    }
+
+    
+}

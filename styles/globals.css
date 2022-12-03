@@ -7,20 +7,108 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+
+:root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --h5-font-size: 0.9rem;
+    --h6-font-size: 0.75rem;
+}
+
+.all-around {
+  position: relative;
+  
+}
+
+.all-around::before,
+.all-around::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.all-around-effect {
+  transition: color 0.25s;
+}
+
+.all-around-effect::before,
+.all-around-effect::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.all-around-effect::before {
+  top: 0;
+  left: 0;
+}
+
+.all-around-effect::after {
+  bottom: 0;
+  right: 0;
+}
+
+.all-around-effect:hover {
+  color: #F87172;
+}
+
+.all-around-effect:hover::before,
+.all-around-effect:hover::after {
+  height: 100%;
+  width: 100%;
+}
+
+.all-around-effect:hover::before {
+  border-top-color: #F87172;
+  border-right-color: #F87172;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.all-around-effect:hover::after {
+  border-bottom-color:#F87172; 
+  border-left-color: #F87172;
+  transition:
+    border-color 0s ease-out 0.5s, 
+    width 0.25s ease-out 0.5s, 
+    height 0.25s ease-out 0.75s; 
+}
+
+h1 {
+    font-size: var(--h1-font-size);
   }
-  body {
-    color: white;
-    background: black;
+  h2 {
+    font-size: var(--h2-font-size);
+  }
+  h3 {
+    font-size: var(--h3-font-size);
+  }
+  
+
+
+@media (min-width: 1500px) {
+  :root {
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.25rem;
+    --h5-font-size: 1rem;
+    --h6-font-size: 0.75rem;
   }
 }
+
+
+
+
