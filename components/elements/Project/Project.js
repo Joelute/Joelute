@@ -6,13 +6,11 @@ import Tag from '../Tag/Tag'
 
 export default function Project({name, tagList, description, demoLink, githubLink}) {
 
-    const tagElement = tagList.map(tag => {
-        return <Tag>{tag}</Tag>
+    const tagElement = tagList.map((tag) => {
+        return (
+            <Tag key={null}>{tag}</Tag>
+        )
     })
-    
-    
-    
-    
     
     return (
         <div className={styles.container}>
