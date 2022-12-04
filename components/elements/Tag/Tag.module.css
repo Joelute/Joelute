@@ -1,9 +1,9 @@
 .tag {
     width: fit-content;
     font-weight: 400;
-    padding: 0 0.5em;
+    padding: 0.2em 0.5em;
     border-radius: 5px;
     color: white;
     background-color: rgb(50, 50, 50);
-
+    font-size: var(--h4-font-size);
 }

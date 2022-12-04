@@ -33,9 +33,24 @@ export default function Home() {
         <section className={styles.project}>
           <h1 className={`${styles['unique-font']}`}>Project</h1>
           <div className={styles['project-container']}>
-            <Project></Project>
-            <Project></Project>
-            <Project></Project>
+            <Project 
+              name='Discord in Time'
+              description='Discord in Time is a Discord timestamp generator that allows users
+                           to select their desired time get a code with timestamp to empower
+                           their messages and annocements on Discord'
+              demoLink='https://discordintime.vercel.app/'
+              githubLink='https://github.com/Joelute/Discord-in-Time'
+              tagList={['React', 'Next.js', 'Vercel']}
+              
+            />
+            <Project
+              name='React with Scrimba'
+              description='React with Scrimba is a showcase of solo projects that I made while learning
+                           With Scrimba'
+              demoLink='https://joelute.netlify.app/'
+              githubLink='https://github.com/Joelute/Scrimba-react'
+              tagList={['React', 'Styled-Components', 'Netlify']}
+            />
           </div>
         </section>
       </main>

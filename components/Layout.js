@@ -6,7 +6,7 @@ import styles from "../styles/layout.module.css"
 
 export default function Layout ({ children }) {
 
-    const navRef = useRef<HTMLDivElement>(null)
+    const navRef = useRef(null)
 
     const showNav = () => {
         if (navRef.current) {
