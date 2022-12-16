@@ -31,7 +31,7 @@ export default function Home() {
             <div className={styles['about-content']}>
               <div className={styles['about-content-me']}>
                 <h2>Get to know me!</h2>
-                <p>My background is in teaching and marketing. I have a bachelors degree in English from Kings College. When I'm not coding, I take care of my five adorable cats.</p>
+                <p>My background is in teaching and marketing. I have a bachelors degree in English from Kings College. When I&#39;m not coding, I take care of my five adorable cats.</p>
                 <h4 className={styles['about-description-more']}>Learn more about me</h4>
               </div>
               <div className={styles['about-content-skill']}>
