@@ -1,7 +1,5 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -10,12 +8,28 @@ a {
   text-decoration: none;
 }
 
-* {
-  margin: 0;
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
 
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img, video, picture, svg {
+  display: block;
+  max-width: 100%;
+}
 
 :root {
     --h1-font-size: 2rem;
@@ -88,6 +102,7 @@ a {
 
 h1 {
     font-size: var(--h1-font-size);
+    font-weight: 700;
   }
   h2 {
     font-size: var(--h2-font-size);
@@ -107,6 +122,13 @@ h1 {
     --h5-font-size: 1rem;
     --h6-font-size: 0.75rem;
   }
+}
+
+p {
+  color: #777;
+  line-height: 2rem;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 

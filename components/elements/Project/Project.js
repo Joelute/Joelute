@@ -4,32 +4,19 @@ import profile from '../../../public/profile.jpg'
 import Link from "next/link"
 import Tag from '../Tag/Tag'
 
-export default function Project({name, tagList, description, demoLink, githubLink}) {
-
-    const tagElement = tagList.map((tag) => {
-        return (
-            <Tag key={null}>{tag}</Tag>
-        )
-    })
+export default function Project({name, description, demoLink}) {
     
     return (
         <div className={styles.container}>
-            
+            <Image src={profile} alt='Project image' className={styles.project}></Image>
+            <div className={styles.info}>
                 <h1 className={styles.name}>{name}</h1>
-                <h4 className={styles.description}>{description}</h4>
-                <div className={styles.tag}>
-                    {tagElement}
-                </div>
+                <p className={styles.description}>{description}</p>
                 <Link 
                     href={demoLink} 
                     className={`${styles.button} ${styles.demo} all-around-effect all-around`}
-                >Demo <i className="uil uil-angle-right-b"></i></Link>
-                <Link 
-                    href={githubLink} 
-                    className={`${styles.button} ${styles.github} all-around-effect all-around`}
-                >Github <i className="uil uil-angle-right-b"></i></Link>
-                
-            <Image src={profile} alt='Project image' className={styles.project}></Image>
+                >DEMO</Link>
+            </div>    
         </div>
     )
 }
