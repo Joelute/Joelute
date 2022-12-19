@@ -1,9 +1,3 @@
-html,
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
 a {
   text-decoration: none;
 }
@@ -20,6 +14,7 @@ a {
 
 html {
   color-scheme: dark light;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +37,6 @@ img, video, picture, svg {
 
 .all-around {
   position: relative;
-  
 }
 
 .all-around::before,
@@ -101,15 +95,17 @@ img, video, picture, svg {
 }
 
 h1 {
-    font-size: var(--h1-font-size);
-    font-weight: 700;
-  }
-  h2 {
-    font-size: var(--h2-font-size);
-  }
-  h3 {
-    font-size: var(--h3-font-size);
-  }
+  font-size: var(--h1-font-size);
+  font-weight: 700;
+}
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+}
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: 700;
+}
   
 
 
@@ -125,7 +121,7 @@ h1 {
 }
 
 p {
-  color: #777;
+  color: #707070;
   line-height: 2rem;
   font-weight: 400;
   font-size: 1.1rem;

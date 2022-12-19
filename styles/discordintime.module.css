@@ -1,0 +1,81 @@
+.responsive {
+    max-width: 1056px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2em auto 2em;
+    grid-template-areas: 
+        "image image image"
+        ". overview ."
+        ". tool ."
+        ". demo ."
+    ;
+}
+
+.overview,
+.tool,
+.demo {
+    color: #FE8686;
+    padding: 2.5em 0;
+}
+
+.heading-container {
+    background-color: #FEAFAF;
+    margin-bottom: 2.5em;
+    height: 100vh;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+.overview {
+    grid-area: overview;
+}
+
+.image-container {
+    background-color: #141414;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 2.5em 0;
+    grid-area: image;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    grid-area: tool;
+}
+
+.tool-tag {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.demo {
+    grid-area: demo;
+}
+
+
+

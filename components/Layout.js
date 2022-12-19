@@ -37,11 +37,15 @@ export default function Layout ({ children }) {
             <nav className={styles.nav} ref={navRef} onMouseEnter={() => showNav()} onMouseLeave={() => hideNav()}>
                 <div className={styles.navbar}>
                     <Link className ={styles.link} href='/'>Home</Link>
-                    <Link className ={styles.link} href='/about'>About</Link>
-                    <Link className ={styles.link} href='/projects'>Projects</Link>
+                    <Link className ={styles.link} href='/#about' scroll={false}>About</Link>
+                    <Link className ={styles.link} href='/#project' scroll={false}>Projects</Link>
                 </div>
             </nav>
             {children}
+            <footer className={styles.footer}>
+                <Link href={'https://www.linkedin.com/in/joelute/'}><i className="uil uil-linkedin"></i></Link>
+                <Link href={'https://github.com/Joelute'}><i className="uil uil-github"></i></Link>
+            </footer>
         </div>
     )
 }

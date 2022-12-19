@@ -20,21 +20,22 @@
 .button {
     display: flex;
     border-radius: 5px;
-    width: 8em;
-    height: 2.2em;
-    font-size: var(--h3-font-size);
-    background-color: #F87172;
+    width: fit-content;
+    padding: 1em 2em;
+    font-size: 1.1rem;
+    background-color: #FE8686;
     align-items: center;
     justify-content: center;
     color: white;
     transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    
 }
 
 .button:hover {
     background-color: white;
-    color: #F87172;
+    color: #FE8686;
     transition: color 0.3s ease-in-out, background-color 0.25s ease-in-out;
 }
 

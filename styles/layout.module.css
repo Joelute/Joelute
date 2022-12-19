@@ -32,5 +32,19 @@
     z-index: 0;
 }
 
+.footer {
+    height: 12rem;
+    background-color: #141414;
+
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: .8em;
+    align-items: center;
+}
+
+.footer i {
+    color: white;
+}
 
 

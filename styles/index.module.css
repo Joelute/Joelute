@@ -34,8 +34,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    color: #FE8686;
 }
+
 
 .about-container {
     margin: 2.5em  0 0 0;
@@ -81,15 +82,12 @@
 }
 
 .about-description-text {
-    font-weight: 400;
     letter-spacing: 1px;
     padding: 0 0 5rem 0;
-    line-height: 1.5em;
 }
 
 .about-description-more {
     margin: 0;
-    color: #FE4A49;
 }
 
 .project-container {
@@ -116,21 +114,6 @@
     color: #FE4A49;
     cursor: default;
     transition: 0.5s ease-out;
-}
-
-.footer {
-    height: 12rem;
-    background-color: #141414;
-
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    gap: .8em;
-    align-items: center;
-}
-
-.footer i {
-    color: white;
 }
 
 @media (min-width: 768px) {
