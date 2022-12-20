@@ -6,8 +6,27 @@ import Layout from '../components/Layout'
 import Project from '../components/elements/Project/Project'
 import profile from '../public/profile.jpg'
 import Tag from '../components/elements/Tag/Tag'
+import { useEffect, useRef } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+        }
+      });
+    })
+
+    const hiddenElements = document.querySelectorAll('.hidden') 
+    hiddenElements.forEach((element) => {
+      observer.observe(element)
+    })
+  }, [])
+  
+
+  
+
   return (
     <Layout>
       <main className={styles.main}>
@@ -21,7 +40,7 @@ export default function Home() {
             <h2 className={styles['home-explore-icon']}><i className="uil uil-angle-down"></i></h2>
           </div>
         </section>
-        <section className={styles.about} id='about'>
+        <section className={`${styles.about} hidden`} id='about'>
           <h1 className={`${styles['unique-font']}`}>About</h1>
           <div className={styles['about-container']}>
             <div className={styles['about-description']}>
@@ -31,7 +50,7 @@ export default function Home() {
             <div className={styles['about-content']}>
               <div className={styles['about-content-me']}>
                 <h2>Get to know me!</h2>
-                <p>My background is in teaching and marketing. I have a bachelors degree in English from Kings College. When I&#39;m not coding, I take care of my five adorable cats.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in numquam incidunt earum quaerat cum fuga, atque similique natus nobis sit.</p>
                 <h4 className={styles['about-description-more']}>Learn more about me</h4>
               </div>
               <div className={styles['about-content-skill']}>
@@ -51,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id='project' className={styles.project}>
+        <section id='project' className={`${styles.project} hidden`}>
           <h1 className={`${styles['unique-font']}`}>Project</h1>
           <div className={styles['project-container']}>
             <Project 

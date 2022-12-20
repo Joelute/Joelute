@@ -3,6 +3,7 @@ import styles from './Project.module.css'
 import profile from '../../../public/profile.jpg'
 import Link from "next/link"
 import Tag from '../Tag/Tag'
+import Button from "../Button/Button"
 
 export default function Project({name, description, link}) {
     
@@ -12,11 +13,14 @@ export default function Project({name, description, link}) {
             <div className={styles.info}>
                 <h2 className={styles.name}>{name}</h2>
                 <p className={styles.description}>{description}</p>
-                <Link 
-                    href={link} 
-                    className={`${styles.button} ${styles.demo} all-around-effect all-around`}
+                <Button 
+                    className={styles.button}
+                    content='LEARN MORE'
+                    href={link}
                     scroll={false}
-                >LEARN MORE</Link>
+                    color='white'
+                    backgroundcolor='#FE8686'
+                ></Button>                
             </div>    
         </div>
     )

@@ -30,11 +30,13 @@
 
 .about,
 .project {
-    padding: 5em 0;
+    padding: 0 0 10em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #FE8686;
+    min-height: 100vh;
+    justify-content: center;
 }
 
 

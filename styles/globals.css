@@ -127,6 +127,25 @@ p {
   font-size: 1.1rem;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1.5s;
+}
 
+.show {
+  opacity: 1;
+  filter: blur(0);
+  animation: soft-drop 1.2s;
+}
+
+@keyframes soft-drop {
+  0% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 
