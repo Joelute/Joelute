@@ -5,7 +5,12 @@
     align-items: center;
 }
 
-.project {
+.image-container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image {
     border-radius: 10px;
     width: 100%;
     object-fit: cover;
@@ -27,7 +32,7 @@
         gap: 3rem;
     }
 
-    .project {
+    .image {
         grid-area: image;
         width: 100%;
         height: auto;

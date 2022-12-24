@@ -78,9 +78,10 @@ export default function Home() {
               description ='Discord in Time is a Discord timestamp generator that allows users
                             to select their desired time get a code with timestamp to empower
                             their messages and annocements on Discord'
-              link='/projects/discordintime'
+              siteLink={'https://discordintime.vercel.app/'}
+              projectLink='/projects/discordintime'
+              image={'DiscordInTime.png'}
               /*             
-              demoLink='https://discordintime.vercel.app/'
               githubLink='https://github.com/Joelute/Discord-in-Time'
               */
             />
@@ -88,9 +89,12 @@ export default function Home() {
               name='React with Scrimba'
               description='React with Scrimba is a showcase of solo projects that I made while learning
                            With Scrimba'
-              link='/projects/scrimba'
+              siteLink={'https://joelute.netlify.app/'}
+              projectLink='https://joelute.netlify.app/'
+              image={'ReactWithScrimba.png'}
               /*
-              demoLink='https://joelute.netlify.app/'
+              projectLink='/projects/scrimba'
+              demoLink=
               githubLink='https://github.com/Joelute/Scrimba-react'
               */
             />

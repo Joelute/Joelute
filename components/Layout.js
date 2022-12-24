@@ -27,14 +27,8 @@ export default function Layout ({ children }) {
                 <meta name="description" content="Hello! My name is Joseph and I'm a software engineer. Nice to meet you!" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <span 
-                className={styles.hover} 
-                onMouseEnter={() => showNav()}
-                onMouseLeave={() => hideNav()}
-            >
-            </span>
 
-            <nav className={styles.nav} ref={navRef} onMouseEnter={() => showNav()} onMouseLeave={() => hideNav()}>
+            <nav className={styles.nav}>
                 <div className={styles.navbar}>
                     <Link className ={styles.link} href='/'>Home</Link>
                     <Link className ={styles.link} href='/#about' scroll={false}>About</Link>
