@@ -176,7 +176,7 @@ p {
 
 @keyframes soft-drop {
   0% {
-    transform: translateY(-15%);
+    transform: translateY(-12%);
   }
   100% {
     transform: translateY(0);

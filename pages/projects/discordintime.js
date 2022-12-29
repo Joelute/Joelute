@@ -24,7 +24,7 @@ export default function DiscordInTime () {
             </section>
             <main className={`${styles.main} ${styles.responsive}`}>
                 <div className={styles['image-container']}>
-                    <Image src={projectImage} className={styles.image}/>
+                    <Image src={projectImage} className={styles.image} alt='Project image'/>
                 </div>
                 
                 <section className={styles.overview}>

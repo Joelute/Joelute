@@ -10,7 +10,7 @@ import { useEffect, useRef } from 'react'
 
 export default function Home() {
   useEffect(() => {
-      const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show')
@@ -28,7 +28,7 @@ export default function Home() {
   
 
   return (
-    <Layout>
+    <Layout pageName={'Home'}>
       <main className={styles.main}>
         <section className={styles.home}>
           <div></div>

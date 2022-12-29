@@ -10,7 +10,7 @@ export default function Project({name, description, image, siteLink, projectLink
     return (
         <div className={styles.container}>
             <Link className={styles['image-container']} href={siteLink}>
-                <Image src={require(`../../../public/${image}`)} alt='Project image' className={`${styles.image} image-hover`}></Image>
+                <Image src={require(`../../../public/${image}`)} alt='Project image' className={`${styles.image} image-hover`} priority></Image>
             </Link>
             
             <div className={styles.info}>
