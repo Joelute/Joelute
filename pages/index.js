@@ -7,6 +7,7 @@ import Project from '../components/elements/Project/Project'
 import profile from '../public/profile.jpg'
 import Tag from '../components/elements/Tag/Tag'
 import { useEffect, useRef } from 'react'
+import { Button } from '../components/elements/Button/Button'
 
 export default function Home() {
   useEffect(() => {
@@ -98,6 +99,23 @@ export default function Home() {
               githubLink='https://github.com/Joelute/Scrimba-react'
               */
             />
+          </div>
+        </section>
+        <section id='contact' className={`${styles.contact} hidden`}>
+          <h1 className={`${styles['unique-font']}`}>Contact</h1>
+          <div>
+            <form className={styles['contact-form']} action="https://formsubmit.co/27bdb5b97aebaf9e4a0c9861ffee4a53" method="POST">
+              <input type="text" name="name" placeholder="Name" required/>
+              <input type="email" name="email" placeholder="Email" required/>
+              <textarea name="content" placeholder="Enter your content here" required></textarea>
+              <Button 
+                type="submit" 
+                content={'Send'} 
+                scroll={false}
+                color='white'
+                backgroundcolor='#FE8686'>
+              </Button>
+            </form>
           </div>
         </section>
       </main>

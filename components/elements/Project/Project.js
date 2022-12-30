@@ -3,7 +3,7 @@ import styles from './Project.module.css'
 import profile from '../../../public/profile.jpg'
 import Link from "next/link"
 import Tag from '../Tag/Tag'
-import Button from "../Button/Button"
+import { LinkButton } from "../Button/Button"
 
 export default function Project({name, description, image, siteLink, projectLink}) {
     
@@ -16,14 +16,14 @@ export default function Project({name, description, image, siteLink, projectLink
             <div className={styles.info}>
                 <h2 className={styles.name}>{name}</h2>
                 <p className={styles.description}>{description}</p>
-                <Button 
+                <LinkButton 
                     className={styles.button}
                     content='LEARN MORE'
                     href={projectLink}
                     scroll={false}
                     color='white'
                     backgroundcolor='#FE8686'
-                ></Button>                
+                ></LinkButton>                
             </div>    
         </div>
     )

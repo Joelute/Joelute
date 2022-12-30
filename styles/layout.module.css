@@ -31,7 +31,7 @@
 .navbar-mobile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1em;
+    padding: 1.5em 1em;
     gap: 1em 0;
     width: 95%;
     left: 0;
@@ -43,7 +43,7 @@
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 1.2rem;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: 
@@ -79,7 +79,7 @@
 }
 
 .footer i,
-.footer iconify-icon {
+.footer svg {
     color: white;
 }
 
@@ -87,6 +87,7 @@
     .nav {
         bottom: 0;
         justify-content: flex-end;
+        height: 3.5em;
     }
 
     .navbar {
@@ -99,7 +100,7 @@
             opacity 0.6s,
             bottom 0.6s
         ;
-        bottom: 5em;
+        bottom: 3.5em;
     }
 
     .nav-menu {

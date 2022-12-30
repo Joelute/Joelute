@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 import styles from '../../styles/discordintime.module.css'
 import projectImage from '../../public/DiscordInTime.png'
 import Tag from '../../components/elements/Tag/Tag'
-import Button from '../../components/elements/Button/Button'
+import { LinkButton } from '../../components/elements/Button/Button'
 
 export default function DiscordInTime () {
     return (
@@ -13,13 +13,13 @@ export default function DiscordInTime () {
                 <div className={`${styles.responsive} ${styles.heading}`}>
                     <h1>Discord In Time</h1>
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in numquam incidunt earum quaerat cum fuga, atque similique natus nobis sit.</h3>
-                    <Button 
+                    <LinkButton 
                         content='Live Project'
                         href={'https://discordintime.vercel.app/'}
                         scroll={false}
                         color='white'
                         backgroundcolor='#FE8686'
-                    ></Button> 
+                    ></LinkButton> 
                 </div>
             </section>
             <main className={`${styles.main} ${styles.responsive}`}>
@@ -56,20 +56,20 @@ export default function DiscordInTime () {
                 <section className={styles.demo}>
                     <h2>See Live</h2>
                     <div className={styles['tool-tag']}>
-                        <Button 
+                        <LinkButton 
                             content='Live Project'
                             href={'https://discordintime.vercel.app/'}
                             scroll={false}
                             color='white'
                             backgroundcolor='#FE8686'
-                        ></Button>
-                        <Button 
+                        ></LinkButton>
+                        <LinkButton 
                             content='Code Link'
                             href={'https://discordintime.vercel.app/'}
                             scroll={false}
                             color='white'
                             backgroundcolor='#FE8686'
-                        ></Button>
+                        ></LinkButton>
                     </div>
                     
                 </section>
