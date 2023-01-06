@@ -92,6 +92,7 @@
 
 .about-description-more {
     margin: 0;
+    color: #FE8686;
 }
 
 .project-container {
@@ -113,13 +114,15 @@
     align-items: center;
     gap: 1.5em;
     margin: 3rem 0;
+    max-width: 25em;
+    width: 100%;
 }
 
 .contact-form :is(input, textarea) {
     border: 2px solid rgba(200, 200, 200, 0.5);
     border-radius: 5px;
     height: 2.5em;
-    width: 25em;
+    width: 100%;
     padding: 0 1em;
     outline: none;
 }

@@ -2,8 +2,6 @@ import Head from "next/head"
 import Link from "next/link"
 import { useRef, useState } from "react"
 import styles from "../styles/layout.module.css"
-import { ReactComponent as Leetcode } from '../public/Leetcode.svg'
-
 
 export default function Layout ({ pageName, children }) {
 
