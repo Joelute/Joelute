@@ -16,6 +16,7 @@ As a software engineer, I enjoy tackling problems and creating unique applicatio
 * 🎮 I also enjoy playing Valorant and Genshin Impact;
 * 💬 Need something? I'll try my best to help;
 
+</br>
 
 #### 📈 My Github Stats:
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Joelute&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
