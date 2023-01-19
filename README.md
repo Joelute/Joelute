@@ -10,7 +10,7 @@ As a software engineer, I enjoy tackling problems and creating unique applicatio
 
 <img align="right" width='450' src="https://i.pinimg.com/originals/d3/ca/2b/d3ca2b6b5b0d90c4b98195b205defa29.gif">
 
-* 👨‍💻 I'm currently contributing to [Zulip](https://github.com/zulip/zulip) and working on some <br/>of my own personal projects;
+* 👨‍💻 I'm currently contributing to [Zulip](https://github.com/zulip/zulip) and working on some of my own personal projects;
 * 📚 I'm currently learning learning Typescript;
 * 🚀 I enjoy learning and improving myself;
 * 🎮 I also enjoy playing Valorant and Genshin Impact;
